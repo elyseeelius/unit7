@@ -1,0 +1,294 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WebApp</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <di class="dashboard">
+    <header>
+      <h1><strong>Your</strong><span class="logo"><i>App</i></span></h1>
+      <div class="login">
+        <span class="vertivalbar"> <img src="./icons/icon-bell.svg" alt=""></span>
+        <img class="profile" src="./images/profile.jpg" alt="">
+        <p>John Doe</p>
+      </div>
+
+    </header>
+    <aside>
+      <img src="./icons/icon-dashboard.svg" alt="">
+      <img src="./icons/icon-members.svg" alt="">
+      <img src="./icons/icon-visits.svg" alt="">
+      <img src="./icons/icon-settings.svg" alt="">
+    </aside>
+
+    <main>
+     <h3 class="dash">Dashboard</h3> 
+      <div class="fixit">
+        <input type="text" class="search" placeholder="Search">
+      </div>
+      <div id="alert">
+        <p><strong>Alert</strong> ipsum dolor sit amet consectetur adipisicing elit.Incidunt earum magnam Incidunt earum
+          magnam Incidunt earum magnam ab aperiam esse?</p>
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;"
+          xml:space="preserve" width="10" height="10">
+          <g id="closeButton">
+            <path style="fill:#fff;" style="fill-rule:evenodd;clip-rule:evenodd;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312
+c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312
+l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937
+c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" />
+          </g>
+          <g>
+
+        </svg>
+
+
+      </div>
+      <div class="widget-container" id="traffic-widget-container">
+        <div class="button-group">
+          <h3 class="title">Traffic</h3>
+          <div id="chart-buttons">
+            <a href="#" id="button-hourly">Hourly</a>
+            <a href="#" id="button-daily">Daily</a>
+            <a href="#" id="button-weekly" class="active">Weekly</a>
+            <a href="#" id="button-monthly">Monthly</a>
+          </div>
+        </div>
+      </div>
+      <div class="traffic">
+        <canvas id="myGraph" width="auto"></canvas>
+      </div>
+      <div class="daily">
+          <h3>DAILY TRAFFIC</h3>
+        <canvas id="bar" width="auto"></canvas>
+      </div>
+      <div class="mobile">
+          <h3>MOBILE USERS</h3>
+        <canvas id="doughnut"></canvas>
+      </div>
+      <div class="social">
+        <h3>SOCIAL STATS</h3>
+        <div class="twitter statstyle">
+          <svg class="space" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px"
+            viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+            <g>
+              <g>
+                <path style="fill: #ff6600;" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826
+C49.652,11.137,38.516,0,24.826,0z M35.901,19.144c0.011,0.246,0.017,0.494,0.017,0.742c0,7.551-5.746,16.255-16.259,16.255
+c-3.227,0-6.231-0.943-8.759-2.565c0.447,0.053,0.902,0.08,1.363,0.08c2.678,0,5.141-0.914,7.097-2.446
+c-2.5-0.046-4.611-1.698-5.338-3.969c0.348,0.066,0.707,0.103,1.074,0.103c0.521,0,1.027-0.068,1.506-0.199
+c-2.614-0.524-4.583-2.833-4.583-5.603c0-0.024,0-0.049,0.001-0.072c0.77,0.427,1.651,0.685,2.587,0.714
+c-1.532-1.023-2.541-2.773-2.541-4.755c0-1.048,0.281-2.03,0.773-2.874c2.817,3.458,7.029,5.732,11.777,5.972
+c-0.098-0.419-0.147-0.854-0.147-1.303c0-3.155,2.558-5.714,5.713-5.714c1.644,0,3.127,0.694,4.171,1.804
+c1.303-0.256,2.523-0.73,3.63-1.387c-0.43,1.335-1.333,2.454-2.516,3.162c1.157-0.138,2.261-0.444,3.282-0.899
+C37.987,17.334,37.018,18.341,35.901,19.144z" />
+              </g>
+            </g>
+          </svg>
+          <h3>Twitter<br><span class="number">10,345</span></h3>
+        </div>
+        <div class="facebook statstyle">
+          <svg class="space" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px"
+            viewBox="0 0 486.392 486.392" style="enable-background:new 0 0 486.392 486.392;" xml:space="preserve">
+            <g>
+              <g>
+                <g>
+                  <path style="fill:#ff6600;" d="M243.196,0C108.891,0,0,108.891,0,243.196s108.891,243.196,243.196,243.196
+s243.196-108.891,243.196-243.196C486.392,108.861,377.501,0,243.196,0z M306.062,243.165l-39.854,0.03l-0.03,145.917h-54.689
+V243.196H175.01v-50.281l36.479-0.03l-0.061-29.609c0-41.039,11.126-65.997,59.431-65.997h40.249v50.311h-25.171
+c-18.817,0-19.729,7.022-19.729,20.124l-0.061,25.171h45.234L306.062,243.165z" />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h3>Facebook<br><span class="number">8,739</span></h3>
+        </div>
+        <div class="Google statstyle">
+          <svg class="space" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px"
+            viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+            <g>
+              <g>
+                <g>
+                  <path style="fill:#ff6600;" d="M21.5,28.94c-0.161-0.107-0.326-0.223-0.499-0.34c-0.503-0.154-1.037-0.234-1.584-0.241h-0.066
+c-2.514,0-4.718,1.521-4.718,3.257c0,1.89,1.889,3.367,4.299,3.367c3.179,0,4.79-1.098,4.79-3.258
+c0-0.204-0.024-0.416-0.075-0.629C23.432,30.258,22.663,29.735,21.5,28.94z" />
+                  <path style="fill:#ff6600;" d="M19.719,22.352c0.002,0,0.002,0,0.002,0c0.601,0,1.108-0.237,1.501-0.687c0.616-0.702,0.889-1.854,0.727-3.077
+c-0.285-2.186-1.848-4.006-3.479-4.053l-0.065-0.002c-0.577,0-1.092,0.238-1.483,0.686c-0.607,0.693-0.864,1.791-0.705,3.012
+c0.286,2.184,1.882,4.071,3.479,4.121H19.719L19.719,22.352z" />
+                  <path style="fill:#ff6600;" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826
+C49.652,11.137,38.516,0,24.826,0z M21.964,36.915c-0.938,0.271-1.953,0.408-3.018,0.408c-1.186,0-2.326-0.136-3.389-0.405
+c-2.057-0.519-3.577-1.503-4.287-2.771c-0.306-0.548-0.461-1.132-0.461-1.737c0-0.623,0.149-1.255,0.443-1.881
+c1.127-2.402,4.098-4.018,7.389-4.018c0.033,0,0.064,0,0.094,0c-0.267-0.471-0.396-0.959-0.396-1.472
+c0-0.255,0.034-0.515,0.102-0.78c-3.452-0.078-6.035-2.606-6.035-5.939c0-2.353,1.881-4.646,4.571-5.572
+c0.805-0.278,1.626-0.42,2.433-0.42h7.382c0.251,0,0.474,0.163,0.552,0.402c0.078,0.238-0.008,0.5-0.211,0.647l-1.651,1.195
+c-0.099,0.07-0.218,0.108-0.341,0.108H24.55c0.763,0.915,1.21,2.22,1.21,3.685c0,1.617-0.818,3.146-2.307,4.311
+c-1.15,0.896-1.195,1.143-1.195,1.654c0.014,0.281,0.815,1.198,1.699,1.823c2.059,1.456,2.825,2.885,2.825,5.269
+C26.781,33.913,24.89,36.065,21.964,36.915z M38.635,24.253c0,0.32-0.261,0.58-0.58,0.58H33.86v4.197
+c0,0.32-0.261,0.58-0.578,0.58h-1.195c-0.322,0-0.582-0.26-0.582-0.58v-4.197h-4.192c-0.32,0-0.58-0.258-0.58-0.58V23.06
+c0-0.32,0.26-0.582,0.58-0.582h4.192v-4.193c0-0.321,0.26-0.58,0.582-0.58h1.195c0.317,0,0.578,0.259,0.578,0.58v4.193h4.194
+c0.319,0,0.58,0.26,0.58,0.58V24.253z" />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h3>Google+<br><span class="number">2,530</span></h3>
+
+        </div>
+      </div>
+      <div class="members">
+          <h3>NEW MEMBERS</h3>
+        <div class="user">
+          <img src="./images/member-1.jpg" alt="">
+          <h4>Victoria Chambers<br><span class="email">victoriachambers@example.com</span></h4>
+          <span class="date">10/11/15</span>
+        </div>
+        <div class="user">
+          <img src="./images/member-2.jpg" alt="">
+          <h4>Dale Byrd<br><span class="email">dalebyrd52@example.com</span> </h4>
+          <span class="date">10/11/15</span>
+        </div>
+        <div class="user">
+          <img src="./images/member-3.jpg" alt="">
+          <h4>Dawn Wood<br><span class="email">dawnwood@example.com</span></h4>
+          <span class="date">10/11/15</span>
+        </div>
+        <div class="user">
+
+          <img src="./images/member-4.jpg" alt="">
+          <h4>Dan Oliver<br><span class="email">danoliver@example.com</span> </h4>
+
+          <span class="date">10/11/15</span>
+        </div>
+      </div>
+      <div class="activity">
+          <h3>RECENT ACTIVITY</h3>
+        <div class="activ">
+          <img src="./images/member-1.jpg" alt="">
+          <h4>Victoria Chambers commented on YourApp' SEO Tips<br>4 hours ago</h4>
+          <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+            viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+            <g>
+              <path style="fill:#ff6600;"
+                d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+            </g>
+          </svg>
+        </div>
+        <div class="activ">
+          <img src="./images/member-2.jpg" alt="">
+          <h4>Victoria Chambers commented on YourApp' SEO Tips<br>4 hours ago</h4>
+          <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+            viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+            <g>
+              <path style="fill:#ff6600;"
+                d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+            </g>
+          </svg>
+
+        </div>
+        <div class="activ">
+          <img src="./images/member-3.jpg" alt="">
+          <h4>Victoria Chambers commented on YourApp' SEO Tips<br>4 hours ago</h4>
+          <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+            viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+            <g>
+              <path style="fill:#ff6600;"
+                d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+            </g>
+          </svg>
+
+        </div>
+        <div class="activ">
+          <img src="./images/member-4.jpg" alt="">
+          <h4>Victoria Chambers commented on YourApp' SEO Tips<br>1 hours ago</h4>
+          <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+            viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+            <g>
+              <path style="fill:#ff6600;"
+                d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+            </g>
+          </svg>
+
+        </div>
+      </div>
+      <div class="message">
+        <h3>MESSAGE USER</h3>
+        <input type="text" name="message" placeholder="Search for User">
+        <textarea name="" id="message" placeholder="Message for User"></textarea>
+        <button>SEND</button>
+      </div>
+      <div class="setting">
+        <h3>SETTING</h3>
+        <p>Send email notifications<button class="toggle first">ON</button></p>
+        <p>Set profile public<button class="toggle second">ON</button></p>
+
+        <select name="timezone_offset" id="timezone">
+          <option value="" selected="selected">Choose your timezone</option>
+          <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+          <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+          <option value="-10:00">(GMT -10:00) Hawaii</option>
+          <option value="-09:50">(GMT -9:30) Taiohae</option>
+          <option value="-09:00">(GMT -9:00) Alaska</option>
+          <option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+          <option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+          <option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+          <option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+          <option value="-04:50">(GMT -4:30) Caracas</option>
+          <option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+          <option value="-03:50">(GMT -3:30) Newfoundland</option>
+          <option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+          <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+          <option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+          <option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+          <option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+          <option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+          <option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+          <option value="+03:50">(GMT +3:30) Tehran</option>
+          <option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+          <option value="+04:50">(GMT +4:30) Kabul</option>
+          <option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+          <option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+          <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+          <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+          <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+          <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+          <option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+          <option value="+08:75">(GMT +8:45) Eucla</option>
+          <option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+          <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+          <option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+          <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+          <option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+          <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+          <option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+          <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+          <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+          <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+        </select>
+        <div class="lastButton">
+          <button class="save">SAVE</button>
+          <button class="cancel">CANCEL</button>
+        </div>
+      </div>
+    </main>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</html>
