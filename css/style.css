@@ -2,12 +2,14 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: rgb(156, 150, 150);
+
 }
 
 .dashboard {
   display: grid;
   grid-template-columns: 100px 9fr;
   grid-template-rows: 60px 5fr;
+  
 
 }
 
@@ -125,7 +127,7 @@ img {
   padding: 0 15px;
   margin-left: 0px;
   display: grid;
-  grid-template-rows: 0.1fr 0.1fr 0.85fr 0.1fr;
+  grid-template-rows: 0.1fr 0.1fr 2.1fr 0.1fr;
 
 }
 
@@ -154,6 +156,8 @@ button {
 }
 
 .setting {
+
+  position: relative;
   display: grid;
   color:rgba(94, 89, 89, 0.5);
   border-left: 1px solid rgba(94, 89, 89, 0.5);
@@ -368,3 +372,83 @@ h3 {
   color:#7170C6;
  /* font-weight: 100; */
 }
+/* =====================================================
+   =====================================================
+   ===================================================== */
+   .checkbox-btn{
+    position: relative;
+     top:-15%; 
+     left: 5%;
+     transform: translate(-50%,-50%);
+     width: 100px;
+     height: 40px;
+     margin-left: 250px;
+     margin-bottom:20px;
+
+   }
+   .checkbox-btn input{
+     position: absolute;
+     top:0;
+     left:0;
+     width: 100%;
+     height: 100%;
+     display: block;
+     cursor: pointer;
+     opacity: 0;
+     z-index: 1;
+   }
+   .checkbox-btn div{
+     position: absolute;
+     top: 0;
+     left: 0 ;
+     width: 100%;
+     height: 100%;
+     border:4px solid #ffffff;
+     border-radius: 40px;
+    overflow: hidden;
+    background: #ff6600;
+    z-index: -1;
+   }
+   .checkbox-btn div .slide{
+     position: absolute;
+     top: 1;
+     left:0;
+     width:35px;
+     height: 35px;
+     border-radius: 50%;
+     padding: 1px;
+   background: #7170C6;
+     transition: 0.5s;
+     z-index: -2;
+   }
+   .checkbox-btn input:checked + div .slide{
+     transform:translateX(60px);
+   }
+   .checkbox-btn .slide:before{
+    content: 'ON';
+    position: absolute;
+    top:0;
+    left:-60px;
+    text-align: center;
+    width: 60px;
+    height: 100%;
+    line-height: 40px;
+    background: #ff6600;
+    font-weight: bold;
+    color:#fff;
+   }
+   .checkbox-btn .slide:after{
+    content: 'OFF';
+    position: absolute;
+    top:2;
+    right:-58px;
+    text-align: center;
+    width: 60px;
+    height: 100%;
+    line-height: 40px;
+
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+
+   }
+

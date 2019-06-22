@@ -16,6 +16,13 @@
     <header>
       <h1><strong>Your</strong><span class="logo"><i>App</i></span></h1>
       <div class="login">
+        <ul class="notification">
+          <li>You have a new message</li>
+          <li>You have a new message</li>
+          <li>You have a new message</li>
+          <li>You have a new message</li>
+          <li>You have a new message</li>
+        </ul>
         <span class="vertivalbar"> <img src="./icons/icon-bell.svg" alt=""></span>
         <img class="profile" src="./images/profile.jpg" alt="">
         <p>John Doe</p>
@@ -223,16 +230,33 @@ c0.319,0,0.58,0.26,0.58,0.58V24.253z" />
 
         </div>
       </div>
+      <form action="">
       <div class="message">
         <h3>MESSAGE USER</h3>
         <input type="text" name="message" placeholder="Search for User">
         <textarea name="" id="message" placeholder="Message for User"></textarea>
         <button>SEND</button>
       </div>
+      </form>
+      <form action="">
       <div class="setting">
         <h3>SETTING</h3>
-        <p>Send email notifications<button class="toggle first">ON</button></p>
-        <p>Set profile public<button class="toggle second">ON</button></p>
+        <label>Send email notifications</label>
+        <div class="checkbox-btn">
+          <input type="checkbox" name="">
+          <div><span class="slide"></span></div>
+        </div>
+        <label>Set profile public</label>
+        <div class="checkbox-btn">
+          <input type="checkbox" name="">
+          <div><span class="slide"></span></div>
+        </div>
+      </form>
+
+
+
+
+
 
         <select name="timezone_offset" id="timezone">
           <option value="" selected="selected">Choose your timezone</option>
