@@ -1,6 +1,43 @@
 const closeButton = document.getElementById('closeButton')
 const alert = document.getElementById('alert')
 
+// event listener for the Notification
+const icon = document.querySelector('.vertivalbar')
+const notification = document.querySelector('.notification')
+icon.addEventListener('click',function(){
+    notification.style.display = 'block';
+})
+//  when click on close delete the notification message
+// const close_btn = document.getElementsByClassName('close')
+// for (let i = 0; i < close_btn.length; i++) {
+//     const close = close_btn[i];
+//     close.addEventListener('click', function(e){
+//         if(e.className == 'close'){
+//         console.log(e.target.parentNode.parentNode.parentNode);
+//         }
+//     })
+    
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 closeButton.addEventListener('click', function(){
  console.log('you have it')
  alert.style.display = 'none'
@@ -99,8 +136,7 @@ var trafficChart = new Chart(traffic, {
         }
     }
 });
-//Traffic Widget Buttons
-    //Update traffic chart to appropriate data set on button click
+
      $("#button-hourly").click(function() {
          trafficChart.config.data = hourlyTrafficData;
          trafficChart.update();
