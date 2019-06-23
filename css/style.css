@@ -444,13 +444,10 @@ h3 {
   background: rgba(113, 112, 198, 0.822);
 }
 ul {
-
   padding: 0;
   display: none;
-
 }
 li {
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -459,7 +456,7 @@ li {
   border-bottom: 1px solid #ffffff93;
   margin-bottom: 10px;
 }
-li:last-child{
+li:last-child {
   border-bottom: 0;
 }
 .close {
@@ -469,19 +466,25 @@ li:last-child{
   stroke-width: 1px;
   margin-left: 20px;
 }
-#notificationSign{
+#notificationSign {
   position: absolute;
-  top:10px;
-  right:156px;
+  top: 10px;
+  right: 156px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: green;
-  /* z-index: -; */
 }
-@media (min-width:320px){
+/* ===================================================== 
+                      Media Query for phone 
+   ===================================================== */
 
-}
-@media (min-width:768px){
-  
-}
+/* ===================================================== 
+                      Media Query for Tablet 
+   ===================================================== */
+/* 
+   Add a CSS transition to the bell icon when the user hovers over it.
+
+   A “Send” button that uses JS to allow a user to submit the form and display a 
+   confirmation the message was sent
+Uses JS to display error messages if both or either the user or message field is empty. */
