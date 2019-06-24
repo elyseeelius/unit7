@@ -7,36 +7,6 @@ const notification = document.querySelector('.notification')
 icon.addEventListener('click',function(){
     notification.style.display = 'block';
 })
-//  when click on close delete the notification message
-// const close_btn = document.getElementsByClassName('close')
-// for (let i = 0; i < close_btn.length; i++) {
-//     const close = close_btn[i];
-//     close.addEventListener('click', function(e){
-//         if(e.className == 'close'){
-//         console.log(e.target.parentNode.parentNode.parentNode);
-//         }
-//     })
-    
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 closeButton.addEventListener('click', function(){
  console.log('you have it')
