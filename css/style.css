@@ -1502,7 +1502,7 @@ li:last-child {
   
   .login {
     /* display: flex; */
-    margin-left: 220px;
+    /* margin-left: px; */
     margin-right: 10px;
     justify-content: center;
     align-items: center;
