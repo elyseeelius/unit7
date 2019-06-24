@@ -223,3 +223,23 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+const send = document.querySelector('.send')
+const userFilter =document.getElementById('userFilter');
+const userMessage =document.getElementById('userMessage');
+
+// validation for the form
+
+send.addEventListener('click', (e) => {
+    e.preventDefault();    
+   //  ensure user and message fields are filled out
+    if (userFilter.value === "" && userMessage.value === "") {
+    window.alert("Please fill out user and message fields before sending");
+    } else if (userFilter.value === "" ) {
+    window.alert("Please fill out user field before sending");
+    } else if (userMessage.value === "" ) {
+    window.alert("Please fill out message field before sending");
+    } else {
+    window.alert(`Message successfully sent to: ${userFilter.value}`);
+    }
+    });
+    
