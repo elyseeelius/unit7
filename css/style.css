@@ -1477,7 +1477,7 @@ li:last-child {
 }
 
 /* ///////////////////////////////////////////////////// */
-@media(min-width:320px){
+
   body {
     width: 1024px;
     margin: 0 auto;
@@ -1973,5 +1973,4 @@ li:last-child {
     height: 10px;
     border-radius: 50%;
     background-color: green;
-  }
   }
